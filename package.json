@@ -1,0 +1,39 @@
+{
+  "name": "@ahmedrowaihi/hlsify",
+  "version": "0.0.0",
+  "description": "an ffmpeg wrapper to encode videos into hls with multiple bitrates",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./dist/index.js": "./dist/index.js",
+    "./dist/index.d.ts": "./dist/index.d.ts"
+  },
+  "scripts": {
+    "dev": "tsup src/index.ts --watch",
+    "build": "tsup src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.2",
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@ffprobe-installer/ffprobe": "^2.1.2"
+  },
+  "devDependencies": {
+    "@types/fluent-ffmpeg": "^2.1.24",
+    "@types/node": "^20.4.6",
+    "eslint": "^8.46.0",
+    "eslint-config-custom-server": "workspace:*",
+    "typescript": "^5.3.3",
+    "tsup": "^8.0.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
