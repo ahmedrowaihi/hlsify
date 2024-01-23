@@ -1,9 +1,14 @@
 {
   "name": "@ahmedrowaihi/hlsify",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "an ffmpeg wrapper to encode videos into hls with multiple bitrates",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest"
+  },
   "files": [
     "dist"
   ],
@@ -29,11 +34,10 @@
     "@types/fluent-ffmpeg": "^2.1.24",
     "@types/node": "^20.4.6",
     "eslint": "^8.46.0",
-    "eslint-config-custom-server": "workspace:*",
     "typescript": "^5.3.3",
     "tsup": "^8.0.1"
   },
   "keywords": [],
-  "author": "",
+  "author": "ahmedrowaihi/sudorw",
   "license": "ISC"
 }
